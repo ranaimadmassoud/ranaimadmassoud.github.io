@@ -11,223 +11,801 @@
   <meta name="keywords" content="computational toxicology, PFAS, molecular dynamics, risk assessment, environmental chemistry, cheminformatics">
 
   <meta name="author" content="Rana I. Massoud">
+
+  <style>
+
+    /* =========================
+       GENERAL PAGE STYLE
+       ========================= */
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 170px 60px 40px;
+      line-height: 1.6;
+      color: #333333;
+      font-size: 15px;
+      background-color: #ffffff;
+    }
+
+    h1 {
+      color: #263f35;
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      color: #29483b;
+      font-size: 21px;
+      font-weight: 600;
+      margin-top: 30px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      color: #555555;
+      font-size: 15px;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 15px;
+      color: #3f3f3f;
+    }
+
+    li {
+      font-size: 15px;
+      color: #3f3f3f;
+      margin-bottom: 5px;
+    }
+
+    strong {
+      color: #303030;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #dddddd;
+      margin: 30px 0;
+    }
+
+    a {
+      color: #315f4c;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #1f3d31;
+      text-decoration: underline;
+    }
+
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
+    .header-text p {
+      max-width: 600px;
+    }
+
+
+    /* =========================
+       CV BUTTON
+       ========================= */
+
+    .cv-button {
+      display: inline-block;
+      padding: 7px 17px;
+      border: 1px solid #315f4c;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #315f4c;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .cv-button:hover {
+      background-color: #315f4c;
+      color: white;
+      text-decoration: none;
+    }
+
+
+    /* =========================
+       RIGHT NAVIGATION
+       ========================= */
+
+    .side-nav {
+      position: fixed;
+      right: 35px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 125px;
+    }
+
+    .side-nav a {
+      display: block;
+      padding: 6px 0;
+      color: #555555;
+      font-size: 13px;
+      text-decoration: none;
+      border-left: 2px solid transparent;
+      padding-left: 10px;
+      transition: all 0.2s ease;
+    }
+
+    .side-nav a:hover {
+      color: #29483b;
+      border-left: 2px solid #29483b;
+      text-decoration: none;
+    }
+
+
+    /* =========================
+       LINKEDIN
+       ========================= */
+
+    .linkedin {
+      font-weight: 500;
+    }
+
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 900px) {
+
+      body {
+        padding: 30px;
+      }
+
+      .side-nav {
+        position: static;
+        transform: none;
+        width: auto;
+        margin: 20px 0 30px 0;
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        padding: 10px 0;
+      }
+
+      .side-nav a {
+        display: inline-block;
+        margin-right: 15px;
+        border-left: none;
+        padding-left: 0;
+      }
+
+      .side-nav a:hover {
+        border-left: none;
+      }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .profile-photo {
+        width: 150px;
+        height: 150px;
+      }
+
+      h1 {
+        font-size: 27px;
+      }
+
+    }
+
+  </style>
+
 </head>
 
-<body style="font-family: Arial; max-width: 900px; margin: auto; padding: 40px; line-height: 1.6;">
 
-  <!-- HEADER -->
-  <div style="display: flex; align-items: center; gap: 30px; margin-bottom: 20px;">
+<body>
 
-    <img src="531380.JPEG" alt="Rana I. Massoud"
-        style="width:180px; height:180px; object-fit:cover; border-radius:50%;">
 
-    <div>
-      <h1 style="margin-bottom: 5px;">Rana I. Massoud</h1>
+  <!-- =========================
+       RIGHT SIDE NAVIGATION
+       ========================= -->
 
-      <h3 style="margin-top: 0; font-weight: normal;">
-        Computational Toxicology | Mechanistic Toxicology | Environmental Risk Assessment
+  <nav class="side-nav">
+
+    <a href="#bio">Bio</a>
+
+    <a href="#research-interests">
+      Research Interests
+    </a>
+
+    <a href="#expertise">
+      Computational Expertise
+    </a>
+
+    <a href="#experimental">
+      Experimental Background
+    </a>
+
+    <a href="#projects">
+      Research Projects
+    </a>
+
+    <a href="#collaborations">
+      Collaborations
+    </a>
+
+    <a href="#publications">
+      Publications
+    </a>
+
+    <a href="#teaching">
+      Teaching
+    </a>
+
+    <a href="#contact">
+      Contact
+    </a>
+
+  </nav>
+
+
+
+  <!-- =========================
+       HEADER
+       ========================= -->
+
+  <header class="header">
+
+    <img src="531380.JPEG"
+         alt="Rana I. Massoud"
+         class="profile-photo">
+
+    <div class="header-text">
+
+      <h1>Rana I. Massoud</h1>
+
+      <h3>
+        Computational Toxicology | Mechanistic Toxicology |
+        Environmental Risk Assessment
       </h3>
 
-      <p style="max-width:600px;">
+      <p>
         Computational toxicologist studying chemical–biological interactions,
         endocrine disruption, environmental contaminants, and mechanisms of toxicity
         using molecular modeling, molecular dynamics, and data-driven approaches.
       </p>
+
     </div>
 
-  </div>
+  </header>
+
 
   <hr>
-  
-  <!-- BIO -->
-  <h2>Bio</h2>
 
-  <p>
-  I am a PhD candidate in computational physical chemistry at Michigan State University, specializing in molecular modeling, molecular dynamics simulations, enhanced sampling, and structure-based analysis of small molecule-protein interactions. My research integrates computational chemistry with toxicological and biological questions to understand how chemicals interact with molecular targets and contribute to adverse biological outcomes.
+
+
+  <!-- =========================
+       BIO
+       ========================= -->
+
+  <section id="bio">
+
+    <h2>Bio</h2>
+
+    <p>
+      I am a PhD candidate in computational physical chemistry at Michigan State University, specializing in molecular modeling, molecular dynamics simulations, enhanced sampling, and structure-based analysis of small molecule-protein interactions. My research integrates computational chemistry with toxicological and biological questions to understand how chemicals interact with molecular targets and contribute to adverse biological outcomes.
+    </p>
+
+    <p>
+      My research has increasingly focused on computational toxicology and environmental health, particularly the molecular mechanisms underlying endocrine disruption by environmental contaminants. A major focus of my work is per- and polyfluoroalkyl substances (PFAS), where I investigate their interactions with nuclear receptors across aquatic and mammalian models using molecular docking, molecular dynamics simulations, free-energy calculations, and structure-based analyses. These studies aim to connect chemical structure and molecular interactions with receptor modulation and potential downstream toxicological outcomes.
+    </p>
+
+    <p>
+      I am particularly interested in developing mechanistic approaches for studying environmental chemicals and complex chemical exposures. My work includes investigating nuclear-receptor interactions, chemical mixtures, species-specific molecular responses, and structure-activity relationships, with an emphasis on generating mechanistic information that can contribute to New Approach Methodologies (NAMs), adverse outcome pathway (AOP) development, and environmental risk assessment.
+    </p>
+
+    <p>
+      In addition to environmental toxicology, I have contributed to structure-based drug discovery projects involving Mycobacterium tuberculosis targets and GPCRs. These projects have provided experience in molecular docking, pharmacophore modeling, fragment-based approaches, molecular dynamics simulations, and computational analysis of ligand-protein interactions.
+    </p>
+
+    <p>
+      My broader research goal is to bridge molecular-level computational approaches with experimental and systems-level toxicology. I am particularly interested in integrating computational modeling with emerging toxicological data to improve mechanistic understanding of chemical hazards, support development of NAMs, and contribute to predictive and regulatory-relevant approaches for chemical safety assessment.
+    </p>
+
+    <p>
+      <a href="Rana_Massoud_Postcdoc_resume.pdf"
+         target="_blank"
+         class="cv-button">
+        View CV
+      </a>
+    </p>
+
+  </section>
+
+
+
+  <hr>
+
+
+
+  <!-- =========================
+       CONTACT
+       ========================= -->
+
+  <section id="contact">
+
+    <h2>Contact</h2>
+
+    <ul>
+
+      <li>
+        Email:
+        <a href="mailto:massoudr@msu.edu">
+          massoudr@msu.edu
+        </a>
+      </li>
+
+      <li>
+        Phone:
+        <a href="tel:+15179449886">
+          +1-517-944-9886
+        </a>
+      </li>
+
+      <li>
+        Office:
+        218 Chemistry Building, 578 S Shaw Lane,
+        East Lansing, MI 48824
+      </li>
+
+      <li>
+        LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/rana-i-massoud-69a20b211"
+          target="_blank"
+          class="linkedin">
+          Rana I. Massoud
+        </a>
+      </li>
+
+    </ul>
+
+  </section>
+
+
+
+  <hr>
+
+
+
+  <!-- =========================
+       RESEARCH INTERESTS
+       ========================= -->
+
+  <section id="research-interests">
+
+    <h2>Research Interests</h2>
+
+    <ul>
+
+      <li>Computational and mechanistic toxicology</li>
+
+      <li>
+        Endocrine-disrupting chemicals and nuclear receptor signaling
+      </li>
+
+      <li>
+        PFAS and emerging environmental contaminants
+      </li>
+
+      <li>
+        Chemical mixtures and combined biological activity
+      </li>
+
+      <li>
+        New Approach Methodologies (NAMs)
+      </li>
+
+      <li>
+        Adverse Outcome Pathways (AOPs)
+      </li>
+
+      <li>
+        Molecular mechanisms of toxicity
+      </li>
+
+      <li>
+        Structure–activity relationships and predictive toxicology
+      </li>
+
+      <li>
+        Environmental chemical risk assessment
+      </li>
+
+      <li>
+        Computational modeling of chemical–protein interactions
+      </li>
+
+    </ul>
+
+  </section>
+
+
+
+  <hr>
+
+
+
+  <!-- =========================
+       COMPUTATIONAL EXPERTISE
+       ========================= -->
+
+  <section id="expertise">
+
+    <h2>Computational Expertise</h2>
+
+    <ul>
+
+      <li>
+        High-performance computing (HPC) and molecular dynamics simulations
+      </li>
+
+      <li>
+        Steered molecular dynamics and umbrella sampling
+      </li>
+
+      <li>
+        Free-energy calculations: MMGBSA, MMPBSA, and FEP
+      </li>
+
+      <li>
+        Molecular docking and structure-based modeling
+      </li>
+
+      <li>
+        Protein–ligand interaction and residue-level analysis
+      </li>
+
+      <li>
+        Pharmacophore and fragment-based modeling
+      </li>
+
+      <li>
+        QSAR and machine-learning approaches for chemical toxicity prediction
+      </li>
+
+      <li>
+        Python, RDKit, and scikit-learn
+      </li>
+
+      <li>
+        Amber, MOE, Chimera, VMD, AutoDock Vina, Gaussian
+      </li>
+
+      <li>
+        AlphaFold, SwissADME, and cheminformatics workflows
+      </li>
+
+    </ul>
+
+  </section>
+
+
+
+  <hr>
+
+
+
+  <!-- =========================
+       EXPERIMENTAL BACKGROUND
+       ========================= -->
+
+  <section id="experimental">
+
+    <h2>Experimental & Analytical Background</h2>
+
+    <ul>
+
+      <li>NMR and FTIR spectroscopy</li>
+
+      <li>GC-MS</li>
+
+      <li>Cell viability and biological activity assays</li>
+
+      <li>Antimicrobial and antibacterial assays</li>
+
+      <li>Antioxidant assays</li>
+
+    </ul>
+
+  </section>
+
+
+
+  <hr>
+
+
+
+  <!-- =========================
+       RESEARCH PROJECTS
+       ========================= -->
+
+  <section id="projects">
+
+    <h2>Selected Research Projects</h2>
+
+    <ul>
+
+      <li>
+        <strong>
+          PFAS–Nuclear Receptor Interactions in Aquatic Invertebrates:
+        </strong>
+        Molecular mechanisms of PFAS-mediated modulation of the ecdysone
+        receptor and implications for adverse biological outcomes.
+      </li>
+
+      <li>
+        <strong>
+          PFAS Mixtures and Nuclear Receptor Interactions in Fathead Minnow:
+        </strong>
+        Computational investigation of PFAS mixture interactions with estrogen
+        and androgen receptors.
+      </li>
+
+      <li>
+        <strong>
+          PFAS and Biotransformation Products in Rainbow Trout:
+        </strong>
+        Molecular modeling of PFAS interactions with estrogen receptors and
+        investigation of potential estrogenic activity.
+      </li>
+
+      <li>
+        <strong>
+          Food and Textile Dyes and Estrogenic Activity:
+        </strong>
+        Computational and experimental investigation of chemical interactions
+        associated with estrogenic activity.
+      </li>
+
+      <li>
+        <strong>
+          Structure-Based Discovery of MmpL3 Inhibitors in Mycobacterium tuberculosis:
+        </strong>
+        Molecular docking, molecular dynamics, and computational
+        characterization of ligand–target interactions.
+      </li>
+
+      <li>
+        <strong>
+          Computational Discovery of GPR68 Inhibitors:
+        </strong>
+        Structure-based modeling and computational screening of potential
+        therapeutic compounds.
+      </li>
+
+    </ul>
+
+  </section>
+
+
+
+  <hr>
+
+
+
+  <!-- =========================
+       COLLABORATIONS
+       ========================= -->
+
+  <section id="collaborations">
+
+    <h2>Research Collaborations</h2>
+
+    <ul>
+
+      <li>
+        Oak Ridge National Laboratory – Aquatic Ecology
+      </li>
+
+      <li>
+        California Environmental Protection Agency –
+        Office of Environmental Health Hazard Assessment (OEHHA)
+      </li>
+
+      <li>
+        Michigan State University – Center for PFAS Research
+      </li>
+
+      <li>
+        U.S. Environmental Protection Agency – Mid-Continent Ecology Division
+      </li>
+
+      <li>
+        University Hospital Cologne – Computational and Systems Toxicology
+      </li>
+
+      <li>
+        Michigan State University – Departments of Pharmacology and Toxicology,
+        Microbiology, Genetics and Immunology, and Chemistry
+      </li>
+
+    </ul>
+
+  </section>
+
+
+
+  <hr>
+
+
+
+  <!-- =========================
+       PUBLICATIONS
+       ========================= -->
+
+  <section id="publications">
+
+    <h2>Publications</h2>
+
+    <ul>
+
+      <li>
+        Bali, S.K.; Hall, K.; Massoud, R.I.; Almeida, N.M.S.
+
+        <strong>
+          Interaction of Per- and Polyfluoroalkyl Substances with Estrogen
+          Receptors in Rainbow Trout (Oncorhynchus mykiss): An In Silico Investigation.
+        </strong>
+
+        <em>
+          Environmental Science & Technology
+        </em>, 2024.
+
+        <a
+          href="https://doi.org/10.1021/acs.est.4c03648"
+          target="_blank">
+          DOI
+        </a>
+
+      </li>
+
+
+      <li>
+
+        Massoud, R.I.; Bouaziz, M.; Abdallah, H.; Zeiz, A.; Flamini, G.;
+        El-Dakdouki, M.H.
+
+        <strong>
+          Comparative Study on the Chemical Composition and Biological Activities
+          of the Essential Oils of Lavandula angustifolia and Lavandula x intermedia
+          Cultivated in Lebanon.
+        </strong>
+
+        <em>
+          ACS Omega
+        </em>, 2024.
+
+        <a
+          href="https://doi.org/10.1021/acsomega.4c00313"
+          target="_blank">
+          DOI
+        </a>
+
+      </li>
+
+    </ul>
+
+  </section>
+
+
+
+  <hr>
+
+
+
+  <!-- =========================
+       TEACHING
+       ========================= -->
+
+  <section id="teaching">
+
+    <h2>Teaching Experience</h2>
+
+    <p>
+      <strong>
+        Graduate Teaching Assistant – Physical Chemistry I
+      </strong><br>
+
+      Michigan State University, East Lansing, MI, USA
+    </p>
+
+    <ul>
+
+      <li>
+        Assisted in the instruction of undergraduate Physical Chemistry I,
+        covering thermodynamics, kinetics, and quantum chemistry.
+      </li>
+
+    </ul>
+
+
+    <p>
+      <strong>
+        Graduate Teaching Assistant – General Chemistry Laboratory
+      </strong><br>
+
+      Michigan State University, East Lansing, MI, USA
+    </p>
+
+    <ul>
+
+      <li>
+        Led weekly laboratory sessions for undergraduate general chemistry,
+        providing instruction in experimental design, chemical safety, and
+        laboratory techniques.
+      </li>
+
+    </ul>
+
+
+    <p>
+      <strong>
+        High School Chemistry Teacher
+      </strong><br>
+
+      English Academy, Mount Lebanon, Lebanon
+    </p>
+
+    <ul>
+
+      <li>
+        Taught high school chemistry for Grades 10 and 11, delivering lessons
+        aligned with national curriculum standards and preparing students for
+        the Grade 12 Baccalaureate examinations.
+      </li>
+
+    </ul>
+
+  </section>
+
+
+
+  <hr>
+
+
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
+  <p style="font-size:13px; color:#777777; text-align:center; margin-top:40px;">
+    © 2026 Rana I. Massoud
   </p>
-  <p>My research has increasingly focused on computational toxicology and environmental health, particularly the molecular mechanisms underlying endocrine disruption by environmental contaminants. A major focus of my work is per- and polyfluoroalkyl substances (PFAS), where I investigate their interactions with nuclear receptors across aquatic and mammalian models using molecular docking, molecular dynamics simulations, free-energy calculations, and structure-based analyses. These studies aim to connect chemical structure and molecular interactions with receptor modulation and potential downstream toxicological outcomes.
-  </p>
-  <p>I am particularly interested in developing mechanistic approaches for studying environmental chemicals and complex chemical exposures. My work includes investigating nuclear-receptor interactions, chemical mixtures, species-specific molecular responses, and structure-activity relationships, with an emphasis on generating mechanistic information that can contribute to New Approach Methodologies (NAMs), adverse outcome pathway (AOP) development, and environmental risk assessment.
-  </p>
-  <p>In addition to environmental toxicology, I have contributed to structure-based drug discovery projects involving Mycobacterium tuberculosis targets and GPCRs. These projects have provided experience in molecular docking, pharmacophore modeling, fragment-based approaches, molecular dynamics simulations, and computational analysis of ligand-protein interactions.
-  </p>
-  <p>My broader research goal is to bridge molecular-level computational approaches with experimental and systems-level toxicology. I am particularly interested in integrating computational modeling with emerging toxicological data to improve mechanistic understanding of chemical hazards, support development of NAMs, and contribute to predictive and regulatory-relevant approaches for chemical safety assessment.
-  </p>
-  <p>
-  <a href="Rana_Massoud_Postcdoc_resume.pdf" target="_blank"
-     style="display:inline-block; padding:8px 18px; border:1px solid #333;
-            border-radius:5px; text-decoration:none;">
-    View CV
-  </a>
-  </p>
-  <hr>
-  <h2>Contact</h2>
-  <ul>
-  <li>Email: massoudr@msu.edu</li>
-  <li>Phone: +1-517-944-9886</li>
-  <li>Office: 218 Chemistry Building, 578 S Shaw Lane East Lansing, MI 48824</li>
-  <li>LinkedIn: https://www.linkedin.com/in/rana-i-massoud-69a20b211</li>
-  </ul>
-  <hr>
-  <h2>Research Interests</h2>
 
-  <ul>
-  <li>Computational and mechanistic toxicology</li>
-  <li>Endocrine-disrupting chemicals and nuclear receptor signaling</li>
-  <li>PFAS and emerging environmental contaminants</li>
-  <li>Chemical mixtures and combined biological activity</li>
-  <li>New Approach Methodologies (NAMs)</li>
-  <li>Adverse Outcome Pathways (AOPs)</li>
-  <li>Molecular mechanisms of toxicity</li>
-  <li>Structure–activity relationships and predictive toxicology</li>
-  <li>Environmental chemical risk assessment</li>
-  <li>Computational modeling of chemical–protein interactions</li>
-  </ul>
-  <!-- CONTACT -->
-  <hr>
-  <h2>Computational Expertise</h2>
-
-  <ul>
-  <li>High-performance computing (HPC) and molecular dynamics simulations</li>
-  <li>Steered molecular dynamics and umbrella sampling</li>
-  <li>Free-energy calculations: MMGBSA, MMPBSA, and FEP</li>
-  <li>Molecular docking and structure-based modeling</li>
-  <li>Protein–ligand interaction and residue-level analysis</li>
-  <li>Pharmacophore and fragment-based modeling</li>
-  <li>QSAR and machine-learning approaches for chemical toxicity prediction</li>
-  <li>Python, RDKit, and scikit-learn</li>
-  <li>Amber, MOE, Chimera, VMD, AutoDock Vina, Gaussian</li>
-  <li>AlphaFold, SwissADME, and cheminformatics workflows</li>
-  </ul>
-  <hr>
-  <h2>Experimental & Analytical Background</h2>
-
-  <ul>
-  <li>NMR and FTIR spectroscopy</li>
-  <li>GC-MS</li>
-  <li>Cell viability and biological activity assays</li>
-  <li>Antimicrobial and antibacterial assays</li>
-  <li>Antioxidant assays</li>
-  </ul>
-  <hr>
-
-  <!-- PROJECTS -->
-  <h2>Selected Research Projects</h2>
-
-  <ul>
-  <li>
-    <strong>PFAS–Nuclear Receptor Interactions in Aquatic Invertebrates:</strong>
-    Molecular mechanisms of PFAS-mediated modulation of the ecdysone receptor and implications for adverse biological outcomes.
-  </li>
-
-  <li>
-    <strong>PFAS Mixtures and Nuclear Receptor Interactions in Fathead Minnow:</strong>
-    Computational investigation of PFAS mixture interactions with estrogen and androgen receptors.
-  </li>
-
-  <li>
-    <strong>PFAS and Biotransformation Products in Rainbow Trout:</strong>
-    Molecular modeling of PFAS interactions with estrogen receptors and investigation of potential estrogenic activity.
-  </li>
-
-  <li>
-    <strong>Food and Textile Dyes and Estrogenic Activity:</strong>
-    Computational and experimental investigation of chemical interactions associated with estrogenic activity.
-  </li>
-
-  <li>
-    <strong>Structure-Based Discovery of MmpL3 Inhibitors in Mycobacterium tuberculosis:</strong>
-    Molecular docking, molecular dynamics, and computational characterization of ligand–target interactions.
-  </li>
-
-  <li>
-    <strong>Computational Discovery of GPR68 Inhibitors:</strong>
-    Structure-based modeling and computational screening of potential therapeutic compounds.
-  </li>
-  </ul>
-  <hr>
-
-  <h2>Research Collaborations</h2>
-
-  <ul>
-  <li>Oak Ridge National Laboratory – Aquatic Ecology</li>
-  <li>California Environmental Protection Agency – Office of Environmental Health Hazard Assessment (OEHHA)</li>
-  <li>Michigan State University – Center for PFAS Research</li>
-  <li>U.S. Environmental Protection Agency – Mid-Continent Ecology Division</li>
-  <li>University Hospital Cologne – Computational and Systems Toxicology</li>
-  <li>Michigan State University – Departments of Pharmacology and Toxicology, Microbiology, Genetics and Immunology, and Chemistry</li>
-  </ul>
-
-  <hr>
-
-  <!-- PUBLICATIONS -->
-  <!-- PUBLICATIONS -->
-<h2>Publications</h2>
-
-<p>
-<ul>
-  <li>Bali, S.K.; Hall, K.; Massoud, R.I.; Almeida, N.M.S.
-  <strong>Interaction of Per- and Polyfluoroalkyl Substances with Estrogen
-  Receptors in Rainbow Trout (Oncorhynchus mykiss): An In Silico Investigation.</strong>
-  <em>Environmental Science & Technology</em>, 2024.
-  <a href="https://doi.org/10.1021/acs.est.4c03648" target="_blank">DOI</a>
-</p>
-
-<p>
-  <li>Massoud, R.I.; Bouaziz, M.; Abdallah, H.; Zeiz, A.; Flamini, G.;
-  El-Dakdouki, M.H.
-  <strong>Comparative Study on the Chemical Composition and Biological Activities
-  of the Essential Oils of Lavandula angustifolia and Lavandula x intermedia
-  Cultivated in Lebanon.</strong>
-  <em>ACS Omega</em>, 2024.
-  <a href="https://doi.org/10.1021/acsomega.4c00313" target="_blank">DOI</a>
-</ul>
-</p>
-
-<hr>
-  
-  <!-- TEACHING -->
-<h2>Teaching Experience</h2>
-
-<p>
-  <strong>Graduate Teaching Assistant – Physical Chemistry I</strong><br>
-  Michigan State University, East Lansing, MI, USA
-</p>
-
-<ul>
-  <li>
-    Assisted in the instruction of undergraduate Physical Chemistry I,
-    covering thermodynamics, kinetics, and quantum chemistry.
-  </li>
-</ul>
-
-<p>
-  <strong>Graduate Teaching Assistant – General Chemistry Laboratory</strong><br>
-  Michigan State University, East Lansing, MI, USA
-</p>
-
-<ul>
-  <li>
-    Led weekly laboratory sessions for undergraduate general chemistry,
-    providing instruction in experimental design, chemical safety, and
-    laboratory techniques.
-  </li>
-</ul>
-
-<p>
-  <strong>High School Chemistry Teacher</strong><br>
-  English Academy, Mount Lebanon, Lebanon
-</p>
-
-<ul>
-  <li>
-    Taught high school chemistry for Grades 10 and 11, delivering lessons
-    aligned with national curriculum standards and preparing students for
-    the Grade 12 Baccalaureate examinations.
-  </li>
-</ul>
-
-<hr>
 
 </body>
 </html>
